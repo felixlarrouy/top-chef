@@ -2,14 +2,25 @@ const cheerio = require('cheerio')
 const request = require('request');
 const fs = require('fs');
 
-fs.readFile('./restaurant_global.txt', 'utf8', function(err, data) {
-  if (err) throw err;
-  console.log(data);
+var lineReader = require('readline').createInterface({
+  input: require('fs').createReadStream('./restaurant_global.txt')
 });
 
-// var restaurant = {};
-// restaurant['url'] = "https://restaurant.michelin.fr" + link.attr('href');
-// fs.appendFileSync("restaurant_global.json", JSON.stringify(restaurant) + "\n", function(err) {
-//   if (err) {
-//     return console.log(err);
-//   }
+lineReader.on('line', function(line) {
+  request({
+    uri: line,
+  }, function(error, response, body) {
+    var $ = cheerio.load(body);
+    var restaurant = {};
+    restaurant['name'] = $('.poi_intro-display-title').text().trim();
+    var thoroughfare = $('.poi_intro-display-address .field__items .thoroughfare').text();
+    var postalcode = $('.poi_intro-display-address .field__items .postal-code').text();
+    var locality = $('.poi_intro-display-address .field__items .locality').text();
+    restaurant['address'] = thoroughfare + ", " + postalcode + " " + locality;
+    fs.appendFileSync("restaurant_info.json", JSON.stringify(restaurant) + "\n", function(err) {
+      if (err) {
+        return console.log(err);
+      }
+    })
+  })
+});
