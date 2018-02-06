@@ -9,6 +9,13 @@ request({
 }, function(error, response, body) {
   var $ = cheerio.load(body);
 
+  // if file exists, delete its content
+  if (fs.existsSync('restaurant_links.txt')) {
+    fs.truncate('restaurant_links.txt', 0, function() {
+      console.log('done');
+    })
+  }
+
   $(".mr-pager-link").each(function() {
     var current = $(this);
     if (num_pages < parseInt(current.attr("attr-page-number"))) {
@@ -26,12 +33,14 @@ request({
         var link = $(this);
         //restaurant['title'] = $(link).find('.poi_card-display-title').text().trim();
         var restaurant_link = "https://restaurant.michelin.fr" + link.attr('href');
-        fs.appendFileSync("restaurant_global.txt", restaurant_link + "\n", function(err) {
-          if (err) {
-            return console.log(err);
-          }
-        });
+        try {
+          fs.appendFile("restaurant_links.txt", restaurant_link + "\n");
+        } catch (err) {
+          console.log(err);
+        }
       });
-    })
+    }).on('error', function(err) {
+      console.log(err)
+    }).end()
   }
 });
