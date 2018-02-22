@@ -269,7 +269,7 @@
 {"name":"Lucas Carton","address":{"thoroughfare":"9 pl. de la Madeleine","postalcode":"75008","locality":"Paris 08"}}
 {"name":"Le Castellaras","address":{"thoroughfare":"461 chemin Peymeyan","postalcode":"83440","locality":"Fayence"}}
 {"name":"Maison Decoret","address":{"thoroughfare":"15 rue du Parc","postalcode":"03200","locality":"Vichy"}}
-{"name":"La Table d'Hôtes - Le Quatrième Mur","address":{"thoroughfare":"2 pl. de la Comédie","postalcode":"33000","locality":"Bordeaux"}}
+{"name":"La Table d'Hôtes - Le Quatrième Mur","address":{"thoroughfare":"2 pl. de la Comédie","postalcode":"33000","locality":"Bordeaux"}}
 {"name":"Jérôme Feck","address":{"thoroughfare":"19 pl. Mgr-Tissier","postalcode":"51000","locality":"Châlons-en-Champagne"}}
 {"name":"Le Georges","address":{"thoroughfare":"22 pl. des Épars","postalcode":"28000","locality":"CHARTRES"}}
 {"name":"Chapelle Saint-Martin","address":{"thoroughfare":"33, Saint Martin du Fault","postalcode":"87510","locality":"Nieul"}}
@@ -337,7 +337,7 @@
 {"name":"La Table de La Butte","address":{"thoroughfare":"10 rue de la Mer","postalcode":"29260","locality":"PLOUIDER"}}
 {"name":"64° Le Restaurant","address":{"thoroughfare":"9-13 Rue du Général de Gaulle","postalcode":"68240","locality":"Kaysersberg"}}
 {"name":"Tour d'Argent","address":{"thoroughfare":"15 quai de la Tournelle","postalcode":"75005","locality":"Paris"}}
-{"name":"Le Jules Verne","address":{"thoroughfare":"2<E>ème</E> étage Tour Eiffel","postalcode":"75007","locality":"Paris"}}
+{"name":"Le Jules Verne","address":{"thoroughfare":"2Eème/E étage Tour Eiffel","postalcode":"75007","locality":"Paris"}}
 {"name":"Faventia","address":{"thoroughfare":"3100 route de Bagnols-en-Forêt","postalcode":"83440","locality":"Tourrettes"}}
 {"name":"Alan Geaam","address":{"thoroughfare":"19 Rue Lauriston","postalcode":"75016","locality":"Paris"}}
 {"name":"La Vague d'Or","address":{"thoroughfare":"Plage de Bouillabaisse","postalcode":"83990","locality":"Saint-Tropez"}}
@@ -346,9 +346,9 @@
 {"name":"Le France","address":{"thoroughfare":"8 place Cupillard","postalcode":"25130","locality":"VILLERS-LE-LAC"}}
 {"name":"La Table","address":{"thoroughfare":"32 Rue de la Barre","postalcode":"59000","locality":"Lille"}}
 {"name":"Benoit","address":{"thoroughfare":"20 Rue St-Martin","postalcode":"75004","locality":"Paris 04"}}
-{"name":"Pertinence","address":{"thoroughfare":"29 r. de l'Exposition","postalcode":"75007","locality":"Paris"}}
+{"name":"Pertinence","address":{"thoroughfare":"29 r. de l'Exposition","postalcode":"75007","locality":"Paris"}}
 {"name":"Sushi B","address":{"thoroughfare":"5 r. Rameau","postalcode":"75002","locality":"Paris"}}
-{"name":"La Merise","address":{"thoroughfare":"7 r. d'Eschbach","postalcode":"67580","locality":"Laubach"}}
+{"name":"La Merise","address":{"thoroughfare":"7 r. d'Eschbach","postalcode":"67580","locality":"Laubach"}}
 {"name":"Le Chateaubriand","address":{"thoroughfare":"129 av. Parmentier","postalcode":"75011","locality":"Paris"}}
 {"name":"Hostellerie Jérôme","address":{"thoroughfare":"20 r. Comte de Cessole","postalcode":"06320","locality":"La Turbie"}}
 {"name":"L'Auberge des Glazicks","address":{"thoroughfare":"7 rue de la Plage","postalcode":"29550","locality":"PLOMODIERN"}}
@@ -460,7 +460,7 @@
 {"name":"La Côte Saint-Jacques","address":{"thoroughfare":"14 faubourg de Paris","postalcode":"89300","locality":"Joigny"}}
 {"name":"L'Arnsbourg","address":{"thoroughfare":"Untermuhlthal","postalcode":"57230","locality":"Baerenthal"}}
 {"name":"Le Gabriel","address":{"thoroughfare":"42 Avenue Gabriel","postalcode":"75008","locality":"Paris"}}
-{"name":"Le Marcq","address":{"thoroughfare":"944 av. de la République","postalcode":"59700","locality":"Marcq-en-Barœul"}}
+{"name":"Le Marcq","address":{"thoroughfare":"944 av. de la République","postalcode":"59700","locality":"Marcq-en-Barœul"}}
 {"name":"La Table de Manville","address":{"thoroughfare":"Domaine de Manville - D27","postalcode":"13520","locality":"Les Baux-de-Provence"}}
 {"name":"La Bastide St-Antoine","address":{"thoroughfare":"48 av. Henri-Dunant","postalcode":"06130","locality":"Grasse"}}
 {"name":"Auberge de la Charme","address":{"thoroughfare":"12 r. de la Charme","postalcode":"21370","locality":"Prenois"}}
@@ -517,8 +517,8 @@
 {"name":"Allium","address":{"thoroughfare":"88 bd de Créac'h-Gwen","postalcode":"29000","locality":"Quimper"}}
 {"name":"Mickaël Féval","address":{"thoroughfare":"11 Petite-Rue-St-Jean","postalcode":"13100","locality":"Aix-en-Provence"}}
 {"name":"Le Pot d'Étain","address":{"thoroughfare":"4 av. de la République","postalcode":"90400","locality":"Danjoutin"}}
-{"name":"Transparence \"La Table de Patrick Fréchin\"","address":{"thoroughfare":"28 r. Stanislas","postalcode":"54000","locality":"Nancy"}}
-{"name":"L'Hysope","address":{"thoroughfare":"25 r. de l'Aurore","postalcode":"17220","locality":"La Jarrie"}}
+{"name":"Transparence \"La Table de Patrick Fréchin\"","address":{"thoroughfare":"28 r. Stanislas","postalcode":"54000","locality":"Nancy"}}
+{"name":"L'Hysope","address":{"thoroughfare":"25 r. de l'Aurore","postalcode":"17220","locality":"La Jarrie"}}
 {"name":"Maison Crouzil et Hôtel L'Écrin","address":{"thoroughfare":"20 les Quais","postalcode":"22130","locality":"Plancoët"}}
 {"name":"Étude","address":{"thoroughfare":"14 r. Bouquet-de-Longchamp","postalcode":"75016","locality":"Paris"}}
 {"name":"Les Genêts","address":{"thoroughfare":"21 bis Rue de l'Océan","postalcode":"85470","locality":"Brem-sur-Mer"}}
@@ -553,7 +553,7 @@
 {"name":"Rodolphe","address":{"thoroughfare":"35 r. Percière","postalcode":"76000","locality":"Rouen"}}
 {"name":"Le Pêché Gourmand","address":{"thoroughfare":"2 rte de Gap","postalcode":"05100","locality":"Briançon"}}
 {"name":"Clovis","address":{"thoroughfare":"21 Grand-Rue","postalcode":"06140","locality":"Tourrettes-sur-Loup"}}
-{"name":"Racine","address":{"thoroughfare":"6 pl. Godinot","postalcode":"51100","locality":"Reims"}}
+{"name":"Racine","address":{"thoroughfare":"6 pl. Godinot","postalcode":"51100","locality":"Reims"}}
 {"name":"Le Kintessence","address":{"thoroughfare":"Rue des Clarines","postalcode":"73120","locality":"Courchevel 1850"}}
 {"name":"Alcyone","address":{"thoroughfare":"1 Place Daviel","postalcode":"13002","locality":"MARSEILLE"}}
 {"name":"Restaurant de Lauzun","address":{"thoroughfare":"3 bd de l'Esplanade","postalcode":"34150","locality":"Gignac"}}
@@ -563,7 +563,7 @@
 {"name":"Le Pavillon","address":{"thoroughfare":"av. du Verger","postalcode":"62520","locality":"Le Touquet-Paris-Plage"}}
 {"name":"La Roya","address":{"thoroughfare":"plage de la Roya","postalcode":"20217","locality":"Saint-Florent"}}
 {"name":"ES","address":{"thoroughfare":"91 r. de Grenelle","postalcode":"75007","locality":"Paris"}}
-{"name":"Le Pousse-Pied","address":{"thoroughfare":"84 bd des Vendéens","postalcode":"85360","locality":"La Tranche-sur-Mer"}}
+{"name":"Le Pousse-Pied","address":{"thoroughfare":"84 bd des Vendéens","postalcode":"85360","locality":"La Tranche-sur-Mer"}}
 {"name":"La Balette","address":{"thoroughfare":"rte de Port-Vendres","postalcode":"66190","locality":"Collioure"}}
 {"name":"Auberge de la Brie","address":{"thoroughfare":"14 av. Alphonse Boulingre","postalcode":"77860","locality":"Couilly-Pont-aux-Dames"}}
 {"name":"La Table du 11","address":{"thoroughfare":"8 rue de la chancellerie","postalcode":"78000","locality":"Versailles"}}

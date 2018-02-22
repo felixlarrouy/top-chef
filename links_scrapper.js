@@ -46,7 +46,6 @@ request({
 
 /*const frenchStarredRestaurantsUrl = "https://restaurant.michelin.fr/restaurants/france/restaurants-1-etoile-michelin/restaurants-2-etoiles-michelin/restaurants-3-etoiles-michelin"
 var numberOfPages = -1
-
 exports.getMichelinRestaurants = (callback) => {
   getNumberOfPages(frenchStarredRestaurantsUrl).then(nPages => {
     const promises = []
@@ -68,7 +67,6 @@ exports.getMichelinRestaurants = (callback) => {
     callback(err)
   })
 }
-
 function getNumberOfPages(url) {
   return new Promise(function(resolve, reject) {
     request({
@@ -76,7 +74,6 @@ function getNumberOfPages(url) {
     }, function(err, resp, body) {
       if (err) reject(error)
       const $ = cheerio.load(body);
-
       $(".mr-pager-link").each(function() {
         if (numberOfPages < parseInt($(this).attr("attr-page-number"))) {
           numberOfPages = parseInt($(this).attr("attr-page-number"))
@@ -90,7 +87,6 @@ function getNumberOfPages(url) {
     })
   })
 }
-
 function getRestaurantsUrls(pageNumber) {
   return new Promise(function(resolve, reject) {
     request({
@@ -106,7 +102,6 @@ function getRestaurantsUrls(pageNumber) {
     })
   })
 }
-
 function getRestaurantsInfos(url) {
   return new Promise(function(resolve, reject) {
     request({
@@ -120,7 +115,6 @@ function getRestaurantsInfos(url) {
       restaurant.address.thoroughfare = $('.poi_intro-display-address .field__items .thoroughfare').text();
       restaurant.address.postalcode = $('.poi_intro-display-address .field__items .postal-code').text();
       restaurant.address.locality = $('.poi_intro-display-address .field__items .locality').text();
-
       if (restaurant != {}) {
         resolve(restaurant)
       } else {
@@ -129,7 +123,6 @@ function getRestaurantsInfos(url) {
     })
   })
 }
-
 function saveToJSON(restaurantList) {
   return new Promise(function(resolve, reject) {
     for (var i = 0; i < restaurantList.length; i++) {
