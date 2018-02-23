@@ -1,56 +1,47 @@
-const cheerio = require('cheerio')
 const request = require('request');
 const fs = require('fs');
 
-if (fs.existsSync('./lafourchette_links.txt')) {
-  fs.truncate('lafourchette_links.txt', 0, function() {
+if (fs.existsSync('docs/react-app/src/lafourchette_promotions.json')) {
+  fs.truncate('docs/react-app/src/lafourchette_promotions.json', 0, function() {
+    console.log('done');
   })
 }
 
-let separators = ['\'', ' ', '-'];
-let regExp = new RegExp('[' + separators.join('') + ']', 'g')
-
 var lineReader = require('readline').createInterface({
-  input: require('fs').createReadStream('./michelin_restaurants.json')
+  input: require('fs').createReadStream('./lafourchette_restaurants.json')
 });
 
 lineReader.on('line', function(line) {
-  var restaurant_to_search = JSON.parse(line);
-  var tokensAPI = restaurant_to_search["name"].toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").replace(/ - /g, '-').split(regExp);
-  let linkParamatersAPI = "";
-  for (var i = 0; i < tokensAPI.length - 1; i++) {
-    linkParamatersAPI += tokensAPI[i] + '+';
-  }
-  linkParamatersAPI += tokensAPI[tokensAPI.length - 1];
+  let content = JSON.parse(line)
   request({
-    uri: "https://m.lafourchette.com/api/restaurant-prediction?name=" + linkParamatersAPI,
+    uri: content['link'],
   }, function(error, response, body) {
     if (error) return console.log(error);
-    var $ = cheerio.load(body);
-    if (body[0] != '<') {
-      var restaurants_result = JSON.parse(body);
-      let restaurant_found = false
-      let matching_resto = {}
-      if(restaurants_result.length > 0) {
-        for (var i = 0; i < restaurants_result.length; i++) {
-          if (restaurant_found) {
-            console.log("restaurant found");
-            break; // There is no need to keep searching if the restaurant was found
-          }
-          // trouver le restaurant de la liste (s'il existe) avec le même zipcode et la même ville
-          if (restaurants_result[i]['address']['postal_code'] == restaurant_to_search['address']['postalcode']) {
-            matching_resto = restaurants_result[i]
-            restaurant_found = true
-          }
-        }
-        if (restaurant_found) {
-          try {
-            let link = "https://m.lafourchette.com/api/restaurant/" + matching_resto['id'] + "/sale-type"
-            fs.appendFile("lafourchette_links.txt", link + "\n");
-          } catch (err) {
-            console.log(err);
-          }
-        }
+    var result = JSON.parse(body);
+    let restaurant = {}
+    let promotions = []
+    let hasPromo = false
+    let j = 0
+    for (var i = 0; i < result.length; i++) {
+      // Verifier s'il y a une promotion ou un evenement
+      if (result[i].hasOwnProperty('exclusions') && result[i]['exclusions'] != "" && result[i]['is_special_offer']) {
+        hasPromo = true
+        promotions[j] = {}
+        promotions[j]['title'] = result[i]['title']
+        promotions[j]['exclusions'] = result[i]['exclusions']
+        j += 1
+      }
+    }
+    if (hasPromo) {
+      restaurant['name'] = content['name']
+      restaurant['address'] = content['address']
+      restaurant['stars'] = content['stars']
+      restaurant['promotions'] = promotions
+
+      try {
+        fs.appendFile("docs/react-app/src/lafourchette_promotions.json", JSON.stringify(restaurant) + ",\n");
+      } catch (err) {
+        console.log(err);
       }
     }
   }).on('error', function(err) {

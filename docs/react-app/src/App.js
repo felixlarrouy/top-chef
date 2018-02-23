@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
 import logo from './logo.png';
 import './App.css';
-import data from './restaurant_lafourchette.json';
+import data from './lafourchette_promotions.json';
 
 class App extends Component {
   render() {
@@ -28,9 +28,9 @@ class App extends Component {
                   <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                   <CardBody>
                     <CardTitle>{restaurant.name}</CardTitle>
-                    <CardSubtitle>Number of stars</CardSubtitle>
-                    <CardText>{promotions}.</CardText>
-                    <Button>Button</Button>
+                    <CardSubtitle>{restaurant.stars}</CardSubtitle>
+                    <CardText>{promotions}</CardText>
+                    <Button href="https://www.npmjs.com/package/start-react-app">Button</Button>
                   </CardBody>
                 </Card>
               );
