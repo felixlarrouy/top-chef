@@ -2,7 +2,7 @@ const cheerio = require('cheerio')
 const request = require('request');
 const fs = require('fs');
 
-if (fs.existsSync('./restaurant_lafourchette.json')) {
+if (fs.existsSync('../restaurant_lafourchette.json')) {
   fs.truncate('restaurant_lafourchette.json', 0, function() {
     console.log('done');
   })
@@ -64,7 +64,10 @@ lineReader.on('line', function(line) {
       }
       if (hasPromo) {
         restaurant['name'] = matching_resto['name']
+        restaurant['address'] = restaurant_to_search['address']
+        //restaurant['stars'] = restaurant_to_search['stars']
         restaurant['promotions'] = promotions
+
         try {
           fs.appendFile("restaurant_lafourchette.json", JSON.stringify(restaurant) + "\n");
         } catch (err) {
