@@ -1,3 +1,9 @@
+if (fs.existsSync('../restaurant_lafourchette.json')) {
+  fs.truncate('restaurant_lafourchette.json', 0, function() {
+    console.log('done');
+  })
+}
+
 request({
   uri: "https://m.lafourchette.com/api/restaurant/" + matching_resto['id_restaurant'] + "/sale-type",
 }, function(error, response, body) {
