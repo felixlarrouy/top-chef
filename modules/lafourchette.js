@@ -24,13 +24,11 @@ lineReader.on('line', function(line) {
   }
   linkParamatersAPI += tokensAPI[tokensAPI.length - 1];
   request({
-    uri: "https://www.lafourchette.com/recherche/autocomplete?searchText=" + linkParamatersAPI + "&localeCode=fr",
+    uri: "https://m.lafourchette.com/api/restaurant-prediction?name=" + linkParamatersAPI,
   }, function(error, response, body) {
     if (error) return console.log(error);
     var $ = cheerio.load(body);
-    console.log(body);
-    var result = JSON.parse(body);
-    var restaurants_result = result['data']['restaurants'];
+    var restaurants_result = JSON.parse(body);
     let restaurant_found = false
     let matching_resto = {}
     for (var i = 0; i < restaurants_result.length; i++) {
@@ -43,41 +41,6 @@ lineReader.on('line', function(line) {
         restaurant_found = true
       }
     }
-    request({
-      uri: "https://m.lafourchette.com/api/restaurant/" + matching_resto['id_restaurant'] + "/sale-type",
-    }, function(error, response, body) {
-      if (error) return console.log(error);
-      var $$ = cheerio.load(body);
-      var result = JSON.parse(body);
-      let restaurant = {}
-      let promotions = []
-      let hasPromo = false
-      let j = 0
-      for (var i = 0; i < result.length; i++) {
-        // Verifier s'il y a une promotion ou un evenement
-        if (result[i].hasOwnProperty('exclusions') && result[i]['exclusions'] != "") {
-          hasPromo = true
-          promotions[j] = {}
-          promotions[j]['title'] = result[i]['title']
-          promotions[j]['exclusions'] = result[i]['exclusions']
-          j += 1
-        }
-      }
-      if (hasPromo) {
-        restaurant['name'] = matching_resto['name']
-        restaurant['address'] = restaurant_to_search['address']
-        restaurant['stars'] = restaurant_to_search['stars']
-        restaurant['promotions'] = promotions
-
-        try {
-          fs.appendFile("restaurant_lafourchette.json", JSON.stringify(restaurant) + "\n");
-        } catch (err) {
-          console.log(err);
-        }
-      }
-    }).on('error', function(err) {
-      console.log(err)
-    }).end()
   }).on('error', function(err) {
     console.log(err)
   }).end()
