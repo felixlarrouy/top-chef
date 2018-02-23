@@ -28,6 +28,7 @@ lineReader.on('line', function(line) {
   }, function(error, response, body) {
     if (error) return console.log(error);
     var $ = cheerio.load(body);
+    console.log(body);
     var result = JSON.parse(body);
     var restaurants_result = result['data']['restaurants'];
     let restaurant_found = false
@@ -65,7 +66,7 @@ lineReader.on('line', function(line) {
       if (hasPromo) {
         restaurant['name'] = matching_resto['name']
         restaurant['address'] = restaurant_to_search['address']
-        //restaurant['stars'] = restaurant_to_search['stars']
+        restaurant['stars'] = restaurant_to_search['stars']
         restaurant['promotions'] = promotions
 
         try {

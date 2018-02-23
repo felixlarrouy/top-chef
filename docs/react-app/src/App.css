@@ -19,7 +19,7 @@
   color: #4A8633
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.restaurant {
+  width: 200px;
+  margin: 10px;
 }

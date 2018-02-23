@@ -4,7 +4,6 @@ const fs = require('fs');
 
 if (fs.existsSync('./restaurant_info.json')) {
   fs.truncate('restaurant_info.json', 0, function() {
-    console.log('done');
   })
 }
 
@@ -24,14 +23,14 @@ lineReader.on('line', function(line) {
     var postalcode = $('.poi_intro-display-address .field__items .postal-code').text();
     var locality = $('.poi_intro-display-address .field__items .locality').text();
     restaurant['stars'] = $('#node_poi-guide-wrapper > div.node_poi-distinction-section > ul > li:nth-child(1) > div.content-wrapper').text()
-    var address = {};
-    address['thoroughfare'] = thoroughfare;
-    address['postalcode'] = postalcode;
-    address['locality'] = locality;
-    restaurant['address'] = address;
-    restaurant['picture'] = $('#panels-content-main-leftwrapper > div.panel-panel.panels-content-main-left > div > div > ul > li:nth-child(2) > div > a > div.poi_card-picture > img')
+    var address = {}
+    address['thoroughfare'] = thoroughfare
+    address['postalcode'] = postalcode
+    address['locality'] = locality
+    restaurant['address'] = address
+    var picture = $('#flexslider_views_slideshow_poi_image_slideshow-restaurant_slideshow > li.flexslider-views-slideshow-main-frame-row.flexslider_views_slideshow_slide.views-row-1.views-row-odd.flex-active-slide > div.views-field.views-field-field-image > div > img')
+    restaurant['picture'] = picture.attr('src')
     try {
-      //TODO: regarder si le doc existe, si oui vider son contenu (ou le supprimer et en créer un nouveau)
       fs.appendFile("restaurant_info.json", JSON.stringify(restaurant) + "\n");
     } catch (err) {
       console.log(err);
