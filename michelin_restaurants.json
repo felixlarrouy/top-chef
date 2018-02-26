@@ -9,8 +9,8 @@
 {"name":"Quinsou","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"33 r. de l'Abbé-Grégoire","postalcode":"75006","locality":"Paris"}}
 {"name":"Garopapilles","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"62 r. Abbé-de-L'Epée","postalcode":"33000","locality":"Bordeaux"}}
 {"name":"L'Éveil des Sens","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"429 bd Paul-Lintier","postalcode":"53100","locality":"Mayenne"}}
-{"name":"Racine","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"6 pl. Godinot","postalcode":"51100","locality":"Reims"}}
-{"name":"Le Marcq","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"944 av. de la République","postalcode":"59700","locality":"Marcq-en-Barœul"}}
+{"name":"Racine","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"6 pl. Godinot","postalcode":"51100","locality":"Reims"}}
+{"name":"Le Marcq","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"944 av. de la République","postalcode":"59700","locality":"Marcq-en-Barœul"}}
 {"name":"La Maison d'à Côté","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"17 rue de Chambord","postalcode":"41350","locality":"Montlivault"}}
 {"name":"Christopher Coutanceau","stars":"2 étoiles MICHELIN : une cuisine d’exception. Vaut le détour !","address":{"thoroughfare":"Promenade de la Concurrence","postalcode":"17000","locality":"La Rochelle"}}
 {"name":"Au Souper Fin","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"1 rte de Clères","postalcode":"76690","locality":"Frichemesnil"}}
@@ -24,7 +24,7 @@
 {"name":"Le Domaine du Colombier","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"270 Chemin de Malombre","postalcode":"26780","locality":"Malataverne"}}
 {"name":"Le Neuvième Art","stars":"2 étoiles MICHELIN : une cuisine d’exception. Vaut le détour !","address":{"thoroughfare":"173 r. Cuvier","postalcode":"69006","locality":"Lyon"}}
 {"name":"Les Hautes Roches","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"86 quai de Loire","postalcode":"37210","locality":"Rochecorbon"}}
-{"name":"Le Pousse-Pied","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"84 bd des Vendéens","postalcode":"85360","locality":"La Tranche-sur-Mer"}}
+{"name":"Le Pousse-Pied","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"84 bd des Vendéens","postalcode":"85360","locality":"La Tranche-sur-Mer"}}
 {"name":"Lou Cigalon-Maison Martin","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"6 bd Carnot","postalcode":"06560","locality":"Valbonne"}}
 {"name":"L'Orée de la Forêt","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"255 r. de la Forêt","postalcode":"60600","locality":"Étouy"}}
 {"name":"David Toutain","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"29 r. Surcouf","postalcode":"75007","locality":"Paris"}}
@@ -44,7 +44,7 @@
 {"name":"Alcyone","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"1 Place Daviel","postalcode":"13002","locality":"MARSEILLE"}}
 {"name":"Table des Frères Ibarboure","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"chemin Ttalienea","postalcode":"64210","locality":"Bidart"}}
 {"name":"Château de Mirambeau","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"1 Avenue des Comtes Duchatel","postalcode":"17150","locality":"Mirambeau"}}
-{"name":"La Table d'Hôtes - Le Quatrième Mur","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"2 pl. de la Comédie","postalcode":"33000","locality":"Bordeaux"}}
+{"name":"La Table d'Hôtes - Le Quatrième Mur","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"2 pl. de la Comédie","postalcode":"33000","locality":"Bordeaux"}}
 {"name":"Gill","stars":"2 étoiles MICHELIN : une cuisine d’exception. Vaut le détour !","address":{"thoroughfare":"9 quai de la Bourse","postalcode":"76000","locality":"Rouen"}}
 {"name":"Aux Pesked","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"59 Rue du Légué","postalcode":"22000","locality":"Saint-Brieuc"}}
 {"name":"Auberge du Vert Mont","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"1318 r. du Mont-Noir","postalcode":"59299","locality":"Boeschepe"}}
@@ -162,7 +162,7 @@
 {"name":"Le Vivier","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"800 cours F. Peyre (rte de Carpentras)","postalcode":"84800","locality":"L'Isle-sur-la-Sorgue"}}
 {"name":"Le Puits du Trésor","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"21 rte des Quatre-Châteaux","postalcode":"11600","locality":"Lastours"}}
 {"name":"Le Taillevent","stars":"2 étoiles MICHELIN : une cuisine d’exception. Vaut le détour !","address":{"thoroughfare":"15 Rue Lamennais","postalcode":"75008","locality":"Paris"}}
-{"name":"L'Hysope","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"25 r. de l'Aurore","postalcode":"17220","locality":"La Jarrie"}}
+{"name":"L'Hysope","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"25 r. de l'Aurore","postalcode":"17220","locality":"La Jarrie"}}
 {"name":"Auberge St-Walfrid","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"58 r. de Grosbliederstroff","postalcode":"57200","locality":"Sarreguemines"}}
 {"name":"Les Ducs de Lorraine","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"5 av. Provence","postalcode":"88000","locality":"Épinal"}}
 {"name":"L'Atelier de Joël Robuchon - St-Germain","stars":"2 étoiles MICHELIN : une cuisine d’exception. Vaut le détour !","address":{"thoroughfare":"5 r. de Montalembert","postalcode":"75007","locality":"Paris"}}
@@ -263,7 +263,7 @@
 {"name":"Vieux Pont","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"","postalcode":"12390","locality":"Belcastel"}}
 {"name":"La Galinette","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"23 r. Jean Payra","postalcode":"66000","locality":"Perpignan"}}
 {"name":"La Table de La Butte","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"10 rue de la Mer","postalcode":"29260","locality":"PLOUIDER"}}
-{"name":"Pertinence","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"29 r. de l'Exposition","postalcode":"75007","locality":"Paris"}}
+{"name":"Pertinence","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"29 r. de l'Exposition","postalcode":"75007","locality":"Paris"}}
 {"name":"La Passagère","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"33 boulevard E. -Baudoin","postalcode":"06160","locality":"Juan-les-Pins"}}
 {"name":"Auberge de la Tour","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"Place de la Fontaine","postalcode":"15220","locality":"MARCOLES"}}
 {"name":"Le Chantecler","stars":"2 étoiles MICHELIN : une cuisine d’exception. Vaut le détour !","address":{"thoroughfare":"37 Promenade des Anglais","postalcode":"06000","locality":"NICE"}}
@@ -440,7 +440,7 @@
 {"name":"Terre-Mer","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"16 r. du Jeu-de-Paume","postalcode":"56400","locality":"Auray"}}
 {"name":"La Promenade","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"2 promenade Jean-Jaurès","postalcode":"31590","locality":"Verfeil"}}
 {"name":"Qui plume la Lune","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"50 r. Amelot","postalcode":"75011","locality":"Paris 11"}}
-{"name":"La Merise","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"7 r. d'Eschbach","postalcode":"67580","locality":"Laubach"}}
+{"name":"La Merise","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"7 r. d'Eschbach","postalcode":"67580","locality":"Laubach"}}
 {"name":"Likoké","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"7 rte de Païolive","postalcode":"07140","locality":"Les Vans"}}
 {"name":"Auberge de la Brie","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"14 av. Alphonse Boulingre","postalcode":"77860","locality":"Couilly-Pont-aux-Dames"}}
 {"name":"Maison Christian Étienne","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"10 Rue de Mons","postalcode":"84000","locality":"Avignon"}}
@@ -524,7 +524,7 @@
 {"name":"La Table du Connétable","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"4 Rue du Connétable","postalcode":"60500","locality":"Chantilly"}}
 {"name":"La Table des Blot - Auberge du Château","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"1 Grande-Rue","postalcode":"78720","locality":"Dampierre-en-Yvelines"}}
 {"name":"JY'S","stars":"2 étoiles MICHELIN : une cuisine d’exception. Vaut le détour !","address":{"thoroughfare":"17 r. de la Poissonnerie","postalcode":"68000","locality":"Colmar"}}
-{"name":"Transparence \"La Table de Patrick Fréchin\"","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"28 r. Stanislas","postalcode":"54000","locality":"Nancy"}}
+{"name":"Transparence \"La Table de Patrick Fréchin\"","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"28 r. Stanislas","postalcode":"54000","locality":"Nancy"}}
 {"name":"Étincelles - La Gentilhommière","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"","postalcode":"24440","locality":"Sainte-Sabine"}}
 {"name":"Côté Jardin","stars":"1 étoile MICHELIN : une cuisine d’une grande finesse. Vaut l’étape !","address":{"thoroughfare":"14 rte de Bourges","postalcode":"45500","locality":"Gien"}}
 {"name":"La Pyramide-Patrick Henriroux","stars":"2 étoiles MICHELIN : une cuisine d’exception. Vaut le détour !","address":{"thoroughfare":"14 Boulevard Fernand Point","postalcode":"38200","locality":"Vienne"}}
