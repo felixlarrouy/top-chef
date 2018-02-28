@@ -19,8 +19,8 @@ request({
       num_pages = parseInt(current.attr("attr-page-number"));
     }
   });
-  console.log("number of pages: " + num_pages);
-
+  console.log("Number of pages: " + num_pages);
+  console.log("Scrapping french starred restaurants...");
   for (var i = 1; i <= num_pages; i++) {
     request({
       uri: "https://restaurant.michelin.fr/restaurants/france/restaurants-1-etoile-michelin/restaurants-2-etoiles-michelin/restaurants-3-etoiles-michelin/page-" + i,
@@ -47,7 +47,7 @@ request({
           address['locality'] = locality
           restaurant['address'] = address
           try {
-            fs.appendFile(".././michelin_restaurants.json", JSON.stringify(restaurant) + "\n");
+            fs.appendFile(".././michelin_restaurants.json", JSON.stringify(restaurant) + "\n", function() {});
           } catch (err) {
             console.log(err);
           }

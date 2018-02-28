@@ -10,6 +10,8 @@ let regExp = new RegExp('[' + separators.join('') + ']', 'g')
 let matching_resto = {}
 var picture = ""
 
+console.log("Looking for michelin restaurants on lafourchette...");
+
 var lineReader = require('readline').createInterface({
   input: require('fs').createReadStream('./michelin_restaurants.json')
 });
@@ -36,6 +38,7 @@ lineReader.on('line', function(line) {
           }
           // trouver le restaurant de la liste (s'il existe) avec le même zipcode et la même ville
           if (restaurants_result[i]['address']['postal_code'] == restaurant_to_search['address']['postalcode']) {
+            console.log("A michelin restaurant has been found on lafourchette !");
             matching_resto = restaurants_result[i]
 
             let tokensSearch = matching_resto["name"].toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").replace(/ - /g, '-').split(regExp);
@@ -52,7 +55,7 @@ lineReader.on('line', function(line) {
 
         if (restaurant_found) {
           try {
-            fs.appendFile("lafourchette_restaurants.json", JSON.stringify(matching_resto) + "\n");
+            fs.appendFile("lafourchette_restaurants.json", JSON.stringify(matching_resto) + "\n", function() {});
           } catch (err) {
             console.log(err);
           }
