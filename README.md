@@ -52,6 +52,10 @@ Thanks the [LaFourchette](https://www.lafourchette.com), you can book a restaura
 
 By creating a link between [restaurant.michelin.fr](https://restaurant.michelin.fr/), [lafourchette.com](https://www.lafourchette.com) and the end-user.
 
+## What you need to do to get the promotions for french starred restaurants:
+
+
+
 ### Stack
 
 ```

@@ -19,7 +19,25 @@
   color: #4A8633
 }
 
-.restaurant {
-  width: 200px;
-  margin: 10px;
+.cards {
+  margin: 30px;
+  padding: 10px;
+  display: inline-flex;
+  background-color: #D3F3C9;
+  border-radius: 20px;
+}
+
+.title {
+  font-size: 16pt;
+  margin-bottom: 0px;
+}
+
+.address {
+  margin-top: 2px;
+  font-size: 14pt;
+  margin-bottom: 3px;
+}
+
+.stars {
+  font-size: 11pt;
 }
