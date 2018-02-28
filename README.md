@@ -57,7 +57,9 @@ Finally, to find the deals, execute the following command:
 ❯ cd modules/ && node lafourchette.js
 ```
 
+Note: You need to replace the last comma at the end of the document lafourchette_promotions.json located in docs/react-app/src by a "]".
+
 You can launch the web app with the following command:
 ```sh
-❯ 
+❯ cd ../docs/react-app && npm install && npm install --save reactstrap@next react react-dom && npm start
 ```
